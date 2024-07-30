@@ -12,16 +12,14 @@
         <section class="seccion">
             
         <div class="textarea1">
-            <textarea  width = "200px name = "textarea15" id= "texto-izquierdo" placeholder="Escriba o copie su texto aqui" required >
-
-            </textarea>
+            <textarea  name = "textarea15" id = "texto-izquierdo" placeholder = "Escriba o copie su texto aqui" required></textarea>
         </div>
    
         <div class="letras"><text class="fuente">Escriba Letras minusculas y sin acento</text></div>
        
         <div class ="botones">
             <button class="boton1" onclick="copiar()" id="boton1"> Encriptar</button>
-            <button class="boton2" onclick="copiar()" id="boton2"> Desencriptar</button>
+            <button class="boton2" onclick="desencriptar()" id="boton2"> Desencriptar</button>
         </div>
 
 
@@ -30,11 +28,16 @@
         </section>
     
        <section class="imagen">
-        <p></p>
-        <img id="mi-imagen" class = "imagen1"src="./fotos/1.png">
-        <div class="rectangulo">
-            <button class="boton3" id = boton3>Nuevo Botón</button>
+         <div class="rectangulo"> <p id="parrafo"></p> 
+        
+           
+            
+                <button class="boton3" onclick="copiarTexto()" id="boton3">Copiar</button>
+           
         </div>
+       
+        <img id="mi-imagen" class = "imagen1"  src="./fotos/1.png">
+       
       </section>
     </main>
     <script src="archivo.js"></script>

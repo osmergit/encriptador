@@ -4,10 +4,11 @@
 
 
 :root{
-    --color-primario: #eff1e7;
+    --color-primario: #E5E5E5;
     --color-secundario: hsl(0, 87%, 51%);
     --color-terciario: #f6f6f6;
     --fuente-monserrat: 'Montserrat', sans serif;
+    --fuente-inter: inter;
     --fuente-krona: 'krona', sans serif;
 }
 
@@ -25,36 +26,30 @@ body{
 
 .principal{
     
-    border: 1px solid #000000;
-    background: #e8e7ec;
+    background: var(--color-primario);
     padding: 10px;
     display: flex;
     flex-direction: row;
     align-content: flex-start;
-    justify-content: space-between;
-    height: 95%;
-    width: 95%;
-    margin: 10px 15px;
+    height: 95vh;
+    padding-left: 0px;
+    max-height: 100vh;
+    max-width: 100vh;
+    margin: 0px 0px;
 }
 
 .seccion{
-    width: 80%;
-    border: 1px solid #e10c0c;
+    background-color: var(--color-primario);
     display: flex;
-    height: 100%;
     flex-direction: column;
-    
     justify-content: center;
-   
+    max-width: 100vh;
 
 }
 
 .letras{
     display: flex;
-    align-items: flex-end;
-    column-gap: 50px;
-    border: 1px solid #000000;
-    background-color: #22D4FD;
+    align-items: flex-end; 
     color: #0A3871;
     width: 680px;
     margin-left: 240px;
@@ -62,12 +57,11 @@ body{
     font-size: 20px;
     flex: 6;
     text-align: center;
-
     order: 2;
  
 }
 .botones{
-    border: 1px solid #79d83d;
+ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,6 +70,7 @@ body{
     width: 680;
     margin-left: 0px;
     margin-left: 240px;
+    gap: 20px;
 }
 
 .boton1{
@@ -92,6 +87,7 @@ body{
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 .boton2{
@@ -102,7 +98,7 @@ body{
     border-radius: 16px;
     font-family: inter;
     font-size: 16px;
-    
+    padding-left: 20px;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -113,19 +109,24 @@ body{
 .textarea1 textarea{
     display: flex;
     flex: 1;
-    outline: none;
     font-family: inter;
     font-size: 32px;
     resize: none;
     margin-top: 5px;
-    border-radius: 10px;
+    border: none;
+    resize: none;
+    outline: none;
+    /*border-radius: 10px;*/
     /*border-color: #230ee1;*/
-    max-height: 800px;
+    max-height: 288px;
+    max-width: max-content;
     margin-left: 240px;
-    width: 577px;
-    height: 48;
-   
+    max-width: 680px;
+    height: 48px;
+    background-color: var(--color-primario);
+    color: #000000;
     order: 1;
+
 }
 
 textarea:is(:focus, :valid){
@@ -139,51 +140,81 @@ textarea::-webkit-scrollbar{
 }
 
 #texto-derecho {
-    width: 45%;
+    width: 100%;
 }
 #texto-izquierdo {
-    width: 45%;
+    width: 100%;
 }
 
 .imagen{
  
-        width: 440; 
+       background-color: white;
         display: flex;
         flex-direction: column;
-       justify-content: flex-end;
+       justify-content: flex-start;
        align-items: flex-end;
        padding: 20px;
-        margin-left: 20em;
+        margin-left: 5em;
         margin-right: 1em; 
         border-radius: 10px;
-        border: 2px solid rgb(233, 16, 16);
+        width: 50%;
+        border: 2px solid rgb(248, 242, 242);
+        max-height: 600px;
+        flex: 12;
 }
 .imagen1{
     border: 2px solid rgb(241, 233, 233);
     border-radius: 5px;
+    width: 400px; 
+    max-width: 400px;
+    height: 660px;
+   
 }
 
 
 .rectangulo {
-    width: 45%;
-   
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 420px;
+    height: 640px;
+  /*  border: 2px solid rgb(233, 16, 16);*/
+    flex: 1;
 }
 .boton3 {
-    background-color: #FF5733;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 1px;
+    background-color: lightblue;
+    width: 328px;
+    height: 67px;
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.centrar_boton{
+    display: flex;
+    justify-content: center;
 }
 
-p{
+p{  
+    position: absolute;
+    top: 10px;
     border: 2px solid rgb(241, 233, 233);
-    font-family: var(--fuente-monserrat);
+    font-family: var(--fuente-inter);
+    align-items: center;
     margin: 0px;
     font-size: 24px;
     font-weight: 400;
+    margin-left: 30px;
+    width: 400px;
+    justify-content: flex-start;
+    
 }
 .fuente{
     font-family: var(--fuente-krona);
