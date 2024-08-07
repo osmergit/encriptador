@@ -27,7 +27,7 @@ document.querySelector("#boton2").addEventListener("click", () => {
 
 function copiar(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
-  
+    let imagen = document.querySelector(".seccion2")
         // Reemplazar las letras según las reglas
         const encriptado = texto
             .replace(/e/g, 'enter')
@@ -37,6 +37,10 @@ function copiar(elemento, texto) {
             .replace(/u/g, 'ufat');
         
         elementoHTML.innerHTML = encriptado;
+        imagen.style.backgroundImage = "none";
+        document.querySelector("#boton3").style.display = "block"; 
+        textarea.value="";
+
         return encriptado;
     
 }
@@ -53,6 +57,8 @@ function desencriptar(elemento, texto){
         .replace(/ober/g, 'o')
         .replace(/ufat/g, 'u');
     elementoHTML.innerHTML = desencriptado;
+    document.querySelector("#boton3").style.display = "block"; 
+
 console.log(desencriptado);
 return desencriptado;
 }

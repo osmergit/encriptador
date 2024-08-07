@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200..400&display=swap');
 
 
 
 :root{
-    --color-primario: #E5E5E5;
-    --color-secundario: hsl(0, 87%, 51%);
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
     --color-terciario: #f6f6f6;
     --fuente-monserrat: 'Montserrat', sans serif;
     --fuente-inter: inter;
@@ -15,7 +15,14 @@
 * {
     padding: 0;
     margin:0;
+    font-family: inter;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 150%;
 }
+
+
 
 body{
     height: 100vh;
@@ -24,6 +31,11 @@ body{
     color: var(--color-secundario);
 }
 
+.logo{
+    padding-top: 30px;
+    margin-left: 10px;
+    width: 10%;
+}
 .principal{
     
     background: var(--color-primario);
@@ -31,11 +43,13 @@ body{
     display: flex;
     flex-direction: row;
     align-content: flex-start;
-    height: 95vh;
+    height: 90vh;
     padding-left: 0px;
-    max-height: 100vh;
+    max-height: 90vh;
     max-width: 100vh;
-    margin: 0px 0px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    gap: 80px;
 }
 
 .seccion{
@@ -44,9 +58,27 @@ body{
     flex-direction: column;
     justify-content: center;
     max-width: 100vh;
+     border: solid 1px black;
 
 }
 
+.seccion2{
+    background-image: url("./fotos/1.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    align-items: flex-end;
+    border: solid 1px black;
+  
+   /* width: 400px;
+    height: 660px;
+    max-height: 660px;
+    flex: 12;*/
+}
 .letras{
     display: flex;
     align-items: flex-end; 
@@ -67,8 +99,6 @@ body{
     justify-content: center;
     flex: 1;
     order: 3;
-    width: 680;
-    margin-left: 0px;
     margin-left: 240px;
     gap: 20px;
 }
@@ -76,10 +106,11 @@ body{
 .boton1{
   
     background-color: #0A3871;
+    border: 1px solid #0A3871;
     width: 328px;
     height: 67px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 24px;
     font-family: inter;
     font-size: 16px;
     font-weight: 600;
@@ -92,10 +123,11 @@ body{
 
 .boton2{
     background-color: #D8DFE8;
+    border: 1px solid #0A3871;
     width: 328px;
     height: 67px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 24px;
     font-family: inter;
     font-size: 16px;
     padding-left: 20px;
@@ -106,33 +138,64 @@ body{
 
 }
 
+
+.boton3 {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    background-color: lightblue;
+    width: 328px;
+    height: 67px;
+    
+    color: #0A3871;
+    border: none;
+    bottom: -30px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
+.centrar_boton{
+    display: flex;
+    justify-content: center;
+}
+.boton-centro{
+   
+   padding-right: 380px;
+   padding-bottom: 0px;
+  
+}
+
 .textarea1 textarea{
     display: flex;
     flex: 1;
-    font-family: inter;
-    font-size: 32px;
     resize: none;
-    margin-top: 5px;
+    margin-top: 20px;
+   
+    text-transform: lowercase;
     border: none;
     resize: none;
     outline: none;
     /*border-radius: 10px;*/
     /*border-color: #230ee1;*/
     max-height: 288px;
-    max-width: max-content;
+ 
     margin-left: 240px;
-    max-width: 680px;
+    max-width: 400px;
     height: 48px;
+    top: 168px;
     background-color: var(--color-primario);
-    color: #000000;
+    color: var(--color-secundario);
     order: 1;
 
 }
+::placeholder{color: var(--color-secundario);}
 
 textarea:is(:focus, :valid){
    /* border-width: 2px;
     border-color: rgb(98, 222, 16);*/
     padding: 5px;
+    outline: none;
 }
 
 textarea::-webkit-scrollbar{
@@ -146,74 +209,21 @@ textarea::-webkit-scrollbar{
     width: 100%;
 }
 
-.imagen{
- 
-       background-color: white;
-        display: flex;
-        flex-direction: column;
-       justify-content: flex-start;
-       align-items: flex-end;
-       padding: 20px;
-        margin-left: 5em;
-        margin-right: 1em; 
-        border-radius: 10px;
-        width: 50%;
-        border: 2px solid rgb(248, 242, 242);
-        max-height: 600px;
-        flex: 12;
-}
-.imagen1{
-    border: 2px solid rgb(241, 233, 233);
-    border-radius: 5px;
-    width: 400px; 
-    max-width: 400px;
-    height: 660px;
-   
-}
 
-
-.rectangulo {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 420px;
-    height: 640px;
-  /*  border: 2px solid rgb(233, 16, 16);*/
-    flex: 1;
-}
-.boton3 {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 1px;
-    background-color: lightblue;
-    width: 328px;
-    height: 67px;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-.centrar_boton{
-    display: flex;
-    justify-content: center;
-}
 
 p{  
-    position: absolute;
-    top: 10px;
-    border: 2px solid rgb(241, 233, 233);
+    background-color: white;
+    border-radius: 24px;
     font-family: var(--fuente-inter);
     align-items: center;
-    margin: 0px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
     font-size: 24px;
     font-weight: 400;
-    margin-left: 30px;
     width: 400px;
     justify-content: flex-start;
+    gap: 50px;
     
 }
 .fuente{
