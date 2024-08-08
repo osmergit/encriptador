@@ -58,11 +58,13 @@ body{
     flex-direction: column;
     justify-content: center;
     max-width: 100vh;
-     border: solid 1px black;
+   
 
 }
 
+
 .seccion2{
+    bottom: 1px;
     background-image: url("./fotos/1.png");
     background-repeat: no-repeat;
     background-color: white;
@@ -72,13 +74,13 @@ body{
     flex-direction: column;
     border-radius: 24px;
     align-items: flex-end;
-    border: solid 1px black;
-  
-   /* width: 400px;
-    height: 660px;
-    max-height: 660px;
-    flex: 12;*/
+  /*  clip-path: inset(0 round 24px); 
+    overflow: visible; Asegura que los bordes redondeados se apliquen */
 }
+
+
+
+
 .letras{
     display: flex;
     align-items: flex-end; 
@@ -107,7 +109,7 @@ body{
   
     background-color: #0A3871;
     border: 1px solid #0A3871;
-    width: 328px;
+    width: 18.5rem;/*328*/
     height: 67px;
     text-align: center;
     border-radius: 24px;
@@ -124,7 +126,7 @@ body{
 .boton2{
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
-    width: 328px;
+    width: 18.5rem;
     height: 67px;
     text-align: center;
     border-radius: 24px;
@@ -182,7 +184,7 @@ body{
  
     margin-left: 240px;
     max-width: 400px;
-    height: 48px;
+    height: 3rem;
     top: 168px;
     background-color: var(--color-primario);
     color: var(--color-secundario);
@@ -231,4 +233,152 @@ p{
     font-size: 12px;
     width: 400px;
 }
+
+
+@media (max-width: 840px) {
+    .principal {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+   /* Otras propiedades, si es necesario */
+}
+
+
+    .seccion {
+        width: auto;
+
+    }
+
+    .textarea1{
+        height: auto;
+        width: auto;
+        font-size: small;
+    }
+    .botones{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: auto;
+       
+    
+    }
+    .boton1{
+  
+        background-color: #0A3871;
+        border: 1px solid #0A3871;
+        width: 15rem;/*328*/
+        height: 67px;
+        text-align: center;
+        border-radius: 24px;
+        font-family: inter;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 21.5px 0;
+        text-decoration: none;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    .boton2{
+        background-color: #D8DFE8;
+        border: 1px solid #0A3871;
+        width: 15rem;
+        height: 67px;
+        text-align: center;
+        border-radius: 24px;
+        font-family: inter;
+        font-size: 16px;
+        padding-left: 20px;
+        font-weight: 600;
+        padding: 21.5px 0;
+        text-decoration: none;
+        color: #000000;
+    
+    }
+
+}
+
+@media (max-width: 432px){
+.principal {
+flex-direction: column;
+justify-content: left;
+height: auto;
+width: 50vh;
+margin-left: 0px;
+}
+/* Otras propiedades, si es necesario */
+
+.seccion{
+    justify-content: left;
+    width: 50vh;
+}
+.textarea1 textarea{
+    height: auto;
+    margin-left: 0px;
+    width: 20vh;
+    flex: 1;
+    font-size: 1rem;
+}
+.botones{
+
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    width: auto;
+    flex: 1;
+
+}
+.boton1{
+  
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    width: 15rem;/*328*/
+    height: 67px;
+    text-align: center;
+    border-radius: 24px;
+    font-family: inter;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.boton2{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    width: 15rem;
+    height: 67px;
+    text-align: center;
+    border-radius: 24px;
+    font-family: inter;
+    font-size: 16px;
+    padding-left: 20px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000000;
+
+}
+
+
+.letras{
+    display: flex;
+    align-items: flex-end; 
+    color: #0A3871;
+
+    margin-left: 240px;
+    font-family: inter;
+    font-size: 1,5rem;
+    flex: 6;
+    text-align: center;
+    order: 2;
+
+}
+
+
+}
+
 

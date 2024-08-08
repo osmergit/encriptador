@@ -46,7 +46,7 @@ function copiar(elemento, texto) {
 }
 
 function desencriptar(elemento, texto){
-    alert("paso por aca");
+   
     let elementoHTML = document.querySelector(elemento);
     //let elementoHTML = document.querySelector("#texto-izquierdo").value;
     //const desencriptado = elementoHTML
